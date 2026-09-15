@@ -1,0 +1,6 @@
+label,model,fold,pr_auc,roc_auc,precision,recall,f1,n_features
+no_anchored,lightgbm,0,0.533501,0.881272,0.724490,0.428704,0.538664,515
+no_anchored,lightgbm,1,0.557518,0.874425,0.675214,0.454160,0.543054,515
+no_anchored,lightgbm,2,0.549638,0.875061,0.688318,0.440683,0.537343,515
+no_anchored,lightgbm,3,0.534979,0.883185,0.736968,0.421233,0.536065,515
+no_anchored,lightgbm,4,0.558278,0.904636,0.638575,0.486916,0.552528,515

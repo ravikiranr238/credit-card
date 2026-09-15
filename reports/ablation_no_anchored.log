@@ -1,0 +1,63 @@
+C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (7.6.0)/charset_normalizer (3.4.2) doesn't match a supported version!
+  warnings.warn(
+C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\utils.py:178: FutureWarning: The filesystem tracking backend (e.g., './mlruns') will be deprecated in February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://github.com/mlflow/mlflow/issues/18534 for more details and migration guidance. For migrating existing data, https://github.com/mlflow/mlflow-export-import can be used.
+  return FileStore(store_uri, store_uri)
+2026-08-21 17:30:50 | INFO     | train | MLflow tracking URI: file:///C:/Users/arigi/mlops/mlruns | experiment: fraud-detection
+2026-08-21 17:30:52 | INFO     | train | Loaded modelling (472432, 514) (fraud 3.5135%) | holdout (118108, 514) (fraud 3.4409%)
+2026-08-21 17:30:52 | INFO     | train | Loaded 5 temporal folds
+2026-08-21 17:30:52 | INFO     | train | ======================================================================
+2026-08-21 17:30:52 | INFO     | train | Cross-validating lightgbm
+2026-08-21 17:30:53 | INFO     | src.features.aggregations | FrequencyEncoder fitted on 15 columns
+2026-08-21 17:30:53 | INFO     | src.features.aggregations | EntityAmountAggregator fitted on 3 entity keys (_entity_card:5,241 groups, _entity_card_addr:11,795 groups, _entity_card_full:11,949 groups)
+2026-08-21 17:30:53 | INFO     | src.features.pipeline | Excluded 15 features by suffix ['_anchored'] (530 -> 515)
+2026-08-21 17:30:53 | INFO     | src.data.preprocessing | Fitted categorical encoder on 38 columns (3674 total categories)
+2026-08-21 17:30:53 | INFO     | src.data.preprocessing | Fitted categorical encoder on 38 columns (3674 total categories)
+2026-08-21 17:30:53 | INFO     | src.features.pipeline | FeaturePipeline fitted: 515 features (38 categorical)
+2026-08-21 17:31:57 | INFO     | src.models.training | [lightgbm] fold 0 | PR-AUC 0.5335 (19.5x baseline) | ROC-AUC 0.8813 | P 0.7245 | R 0.4287 | F1 0.5387 @ thr 0.3152 | 57.7s | best_iter 707
+2026-08-21 17:31:57 | INFO     | src.features.aggregations | FrequencyEncoder fitted on 15 columns
+2026-08-21 17:31:57 | INFO     | src.features.aggregations | EntityAmountAggregator fitted on 3 entity keys (_entity_card:8,634 groups, _entity_card_addr:22,426 groups, _entity_card_full:22,714 groups)
+2026-08-21 17:31:57 | INFO     | src.features.pipeline | Excluded 15 features by suffix ['_anchored'] (530 -> 515)
+2026-08-21 17:31:57 | INFO     | src.data.preprocessing | Fitted categorical encoder on 38 columns (3674 total categories)
+2026-08-21 17:31:58 | INFO     | src.data.preprocessing | Fitted categorical encoder on 38 columns (3674 total categories)
+2026-08-21 17:31:58 | INFO     | src.features.pipeline | FeaturePipeline fitted: 515 features (38 categorical)
+2026-08-21 17:35:52 | INFO     | src.models.training | [lightgbm] fold 1 | PR-AUC 0.5575 (13.3x baseline) | ROC-AUC 0.8744 | P 0.6752 | R 0.4542 | F1 0.5431 @ thr 0.0550 | 230.4s | best_iter 1999
+2026-08-21 17:35:53 | INFO     | src.features.aggregations | FrequencyEncoder fitted on 15 columns
+2026-08-21 17:35:53 | INFO     | src.features.aggregations | EntityAmountAggregator fitted on 3 entity keys (_entity_card:10,055 groups, _entity_card_addr:26,908 groups, _entity_card_full:27,261 groups)
+2026-08-21 17:35:53 | INFO     | src.features.pipeline | Excluded 15 features by suffix ['_anchored'] (530 -> 515)
+2026-08-21 17:35:53 | INFO     | src.data.preprocessing | Fitted categorical encoder on 38 columns (3674 total categories)
+2026-08-21 17:35:54 | INFO     | src.data.preprocessing | Fitted categorical encoder on 38 columns (3674 total categories)
+2026-08-21 17:35:54 | INFO     | src.features.pipeline | FeaturePipeline fitted: 515 features (38 categorical)
+Traceback (most recent call last):
+  File "C:\Users\arigi\mlops\scripts\train.py", line 492, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "C:\Users\arigi\mlops\scripts\train.py", line 212, in main
+    result = train_cv(
+             ^^^^^^^^^
+  File "C:\Users\arigi\mlops\src\models\training.py", line 235, in train_cv
+    ) = _fit_one(
+        ^^^^^^^^^
+  File "C:\Users\arigi\mlops\src\models\training.py", line 174, in _fit_one
+    best_iteration = fit_with_early_stopping(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arigi\mlops\src\models\estimators.py", line 238, in fit_with_early_stopping
+    model.fit(
+  File "C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightgbm\sklearn.py", line 1704, in fit
+    super().fit(
+  File "C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightgbm\sklearn.py", line 1171, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightgbm\engine.py", line 296, in train
+    booster = Booster(params=params, train_set=train_set)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightgbm\basic.py", line 3758, in __init__
+    train_set.construct()
+  File "C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightgbm\basic.py", line 2574, in construct
+    self._lazy_init(
+  File "C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightgbm\basic.py", line 2170, in _lazy_init
+    self.__init_from_np2d(mat=data, params_str=params_str, ref_dataset=ref_dataset)
+  File "C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightgbm\basic.py", line 2300, in __init_from_np2d
+    _safe_call(
+  File "C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightgbm\basic.py", line 297, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: bad allocation

@@ -1,0 +1,6 @@
+{
+  "run_id": "575c9fa15971471b8f8579c0ed60ef63",
+  "selected_model": "lightgbm",
+  "threshold": 0.29878048780487804,
+  "calibrated": true
+}

@@ -1,0 +1,2 @@
+label,model,fold,pr_auc,roc_auc,precision,recall,f1,n_features
+catboost,catboost,4,0.536841,0.886725,0.614028,0.484266,0.541481,545

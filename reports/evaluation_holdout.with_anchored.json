@@ -1,0 +1,98 @@
+{
+  "partition": "holdout",
+  "n_rows": 118108,
+  "model_name": "lightgbm",
+  "trained_at": "2026-08-20T20:51:36+00:00",
+  "calibrated": true,
+  "decision_threshold": 0.30701754385964913,
+  "expected_calibration_error": 0.0033815201100051407,
+  "metrics": {
+    "roc_auc": 0.9117411376241854,
+    "pr_auc": 0.5639007327777896,
+    "pr_auc_lift": 16.38808753615137,
+    "precision": 0.5966363385718224,
+    "recall": 0.53248031496063,
+    "f1": 0.5627356650630607,
+    "threshold": 0.30701754385964913,
+    "brier": 0.020377493483053878,
+    "prevalence": 0.034409184813899145,
+    "true_negatives": 112581,
+    "false_positives": 1463,
+    "false_negatives": 1900,
+    "true_positives": 2164,
+    "n_samples": 118108,
+    "precision_at_top_0.1pct": 0.9915254237288136,
+    "precision_at_top_1pct": 0.9009314140558848,
+    "precision_at_top_5pct": 0.43099068585944117,
+    "recall_at_top_0.1pct": 0.02878937007874016,
+    "recall_at_top_1pct": 0.2618110236220472,
+    "recall_at_top_5pct": 0.62623031496063
+  },
+  "bootstrap_ci": {
+    "pr_auc": {
+      "metric": "pr_auc",
+      "point": 0.5639007327777896,
+      "ci_lower": 0.5488355911794967,
+      "ci_upper": 0.5786478116894015,
+      "bootstrap_mean": 0.5642106366246575,
+      "standard_error": 0.007704852158207798,
+      "n_resamples": 2000,
+      "level": 0.95
+    },
+    "roc_auc": {
+      "metric": "roc_auc",
+      "point": 0.9117411376241854,
+      "ci_lower": 0.9062968619043587,
+      "ci_upper": 0.9170090816487858,
+      "bootstrap_mean": 0.9118748820879838,
+      "standard_error": 0.0027882285674780734,
+      "n_resamples": 2000,
+      "level": 0.95
+    }
+  },
+  "calibration_table": {
+    "mean_predicted": [
+      0.002641395674679231,
+      0.002964636601544103,
+      0.0035825148570936905,
+      0.005400310282772857,
+      0.007986117930584234,
+      0.012208880608634336,
+      0.019007259567831256,
+      0.0239942519340933,
+      0.05416987680005916,
+      0.34019941891681077
+    ],
+    "observed_rate": [
+      0.002703839452021871,
+      0.0032690695725062866,
+      0.00212021626205873,
+      0.004252229827836548,
+      0.006336405529953917,
+      0.009798270893371758,
+      0.011809163911195087,
+      0.01924691597235678,
+      0.047391096218286265,
+      0.3259942363112392
+    ],
+    "count": [
+      16643.0,
+      11930.0,
+      9433.0,
+      9642.0,
+      19096.0,
+      10410.0,
+      6351.0,
+      15483.0,
+      10445.0,
+      8675.0
+    ]
+  },
+  "figures": [
+    "reports\\figures\\holdout_precision_recall.png",
+    "reports\\figures\\holdout_roc.png",
+    "reports\\figures\\holdout_calibration.png",
+    "reports\\figures\\holdout_confusion_matrix.png",
+    "reports\\figures\\holdout_score_distribution.png"
+  ]
+}

@@ -1,0 +1,4 @@
+model,evaluation,roc_auc,pr_auc,pr_auc_std,pr_auc_lift,precision,recall,f1,brier,precision_at_top_1pct,recall_at_top_1pct,threshold,n_features,n_train_rows,subsampled,training_time_seconds
+lightgbm,cv_temporal_mean,0.883804,0.558308,0.022470,15.451364,0.676574,0.469249,0.553316,0.023633,0.926811,0.255789,0.255702,530.000000,372880,False,757.700000
+xgboost,cv_temporal_mean,0.875405,0.536980,0.021070,14.830485,0.667490,0.451503,0.538081,0.024203,0.917154,0.252868,0.319873,530.000000,372880,False,1579.600000
+lightgbm,validation_last_fold,0.905628,0.589288,,15.369323,0.713894,0.517390,0.599962,0.021535,0.927573,0.241802,0.325123,,372880,False,

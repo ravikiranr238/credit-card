@@ -1,0 +1,187 @@
+{
+  "n_issues": 30,
+  "high": 0,
+  "medium": 30,
+  "issues": [
+    {
+      "column": "D10",
+      "issue": "out_of_range",
+      "detail": "1.05% outside training range [0, 827]",
+      "severity": "medium"
+    },
+    {
+      "column": "D10_anchored",
+      "issue": "out_of_range",
+      "detail": "67.54% outside training range [-695, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D11",
+      "issue": "out_of_range",
+      "detail": "11.61% outside training range [-33, 622]",
+      "severity": "medium"
+    },
+    {
+      "column": "D11_anchored",
+      "issue": "out_of_range",
+      "detail": "55.57% outside training range [-492, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D12",
+      "issue": "out_of_range",
+      "detail": "3.49% outside training range [0, 624]",
+      "severity": "medium"
+    },
+    {
+      "column": "D12_anchored",
+      "issue": "out_of_range",
+      "detail": "84.67% outside training range [-486, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D13_anchored",
+      "issue": "out_of_range",
+      "detail": "96.47% outside training range [-695, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D14_anchored",
+      "issue": "out_of_range",
+      "detail": "87.50% outside training range [-696, 194]",
+      "severity": "medium"
+    },
+    {
+      "column": "D15",
+      "issue": "out_of_range",
+      "detail": "1.30% outside training range [-6, 835]",
+      "severity": "medium"
+    },
+    {
+      "column": "D15_anchored",
+      "issue": "out_of_range",
+      "detail": "60.35% outside training range [-697, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D1_anchored",
+      "issue": "out_of_range",
+      "detail": "75.42% outside training range [-612, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D2_anchored",
+      "issue": "out_of_range",
+      "detail": "56.90% outside training range [-612, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D3_anchored",
+      "issue": "out_of_range",
+      "detail": "94.75% outside training range [-612, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D4",
+      "issue": "out_of_range",
+      "detail": "1.61% outside training range [-90, 812]",
+      "severity": "medium"
+    },
+    {
+      "column": "D4_anchored",
+      "issue": "out_of_range",
+      "detail": "65.41% outside training range [-693, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D5_anchored",
+      "issue": "out_of_range",
+      "detail": "90.79% outside training range [-671, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D6_anchored",
+      "issue": "out_of_range",
+      "detail": "84.50% outside training range [-696, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D7_anchored",
+      "issue": "out_of_range",
+      "detail": "87.99% outside training range [-666, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "D8_anchored",
+      "issue": "out_of_range",
+      "detail": "71.89% outside training range [-1693.79, 140.917]",
+      "severity": "medium"
+    },
+    {
+      "column": "D9_anchored",
+      "issue": "out_of_range",
+      "detail": "100.00% outside training range [0.041667, 141]",
+      "severity": "medium"
+    },
+    {
+      "column": "DeviceInfo",
+      "issue": "unseen_categories",
+      "detail": "22.27% of values unseen in training",
+      "severity": "medium"
+    },
+    {
+      "column": "V159",
+      "issue": "out_of_range",
+      "detail": "6.60% outside training range [0, 43861.9]",
+      "severity": "medium"
+    },
+    {
+      "column": "V160",
+      "issue": "out_of_range",
+      "detail": "6.62% outside training range [0, 641116]",
+      "severity": "medium"
+    },
+    {
+      "column": "V164",
+      "issue": "out_of_range",
+      "detail": "1.28% outside training range [0, 15600]",
+      "severity": "medium"
+    },
+    {
+      "column": "V165",
+      "issue": "out_of_range",
+      "detail": "7.93% outside training range [0, 17493.9]",
+      "severity": "medium"
+    },
+    {
+      "column": "device_vendor",
+      "issue": "unseen_categories",
+      "detail": "8.95% of values unseen in training",
+      "severity": "medium"
+    },
+    {
+      "column": "id_24",
+      "issue": "out_of_range",
+      "detail": "9.06% outside training range [11, 18]",
+      "severity": "medium"
+    },
+    {
+      "column": "id_30",
+      "issue": "unseen_categories",
+      "detail": "31.62% of values unseen in training",
+      "severity": "medium"
+    },
+    {
+      "column": "id_31",
+      "issue": "unseen_categories",
+      "detail": "81.10% of values unseen in training",
+      "severity": "medium"
+    },
+    {
+      "column": "os_version_major",
+      "issue": "out_of_range",
+      "detail": "16.19% outside training range [4, 11]",
+      "severity": "medium"
+    }
+  ]
+}

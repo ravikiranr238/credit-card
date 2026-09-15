@@ -1,0 +1,2 @@
+label,model,fold,pr_auc,roc_auc,precision,recall,f1,n_features
+final_oof,lightgbm,4,0.558278,0.904636,0.638575,0.486916,0.552528,515

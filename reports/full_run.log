@@ -1,0 +1,55 @@
+C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.7.0) or chardet (7.6.0)/charset_normalizer (3.4.2) doesn't match a supported version!
+  warnings.warn(
+C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\utils.py:178: FutureWarning: The filesystem tracking backend (e.g., './mlruns') will be deprecated in February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://github.com/mlflow/mlflow/issues/18534 for more details and migration guidance. For migrating existing data, https://github.com/mlflow/mlflow-export-import can be used.
+  return FileStore(store_uri, store_uri)
+2026-08-20 22:14:59 | INFO     | train | MLflow tracking URI: file:///C:/Users/arigi/mlops/mlruns | experiment: fraud-detection
+2026-08-20 22:15:00 | INFO     | train | Loaded modelling (472432, 514) (fraud 3.5135%) | holdout (118108, 514) (fraud 3.4409%)
+2026-08-20 22:15:00 | INFO     | train | Loaded 5 temporal folds
+2026-08-20 22:15:01 | INFO     | train | ======================================================================
+2026-08-20 22:15:01 | INFO     | train | Cross-validating logistic_regression
+2026-08-20 22:15:01 | INFO     | src.features.aggregations | FrequencyEncoder fitted on 15 columns
+2026-08-20 22:15:01 | INFO     | src.features.aggregations | EntityAmountAggregator fitted on 3 entity keys (_entity_card:5,241 groups, _entity_card_addr:11,795 groups, _entity_card_full:11,949 groups)
+2026-08-20 22:15:01 | INFO     | src.data.preprocessing | Fitted categorical encoder on 38 columns (3674 total categories)
+2026-08-20 22:15:01 | INFO     | src.data.preprocessing | Fitted categorical encoder on 38 columns (3674 total categories)
+2026-08-20 22:15:01 | INFO     | src.features.pipeline | FeaturePipeline fitted: 530 features (38 categorical)
+2026-08-20 22:15:03 | INFO     | src.data.preprocessing | Missingness indicators: 364 columns -> 63 distinct patterns
+2026-08-20 22:15:04 | INFO     | src.data.preprocessing | Fitted linear preprocessor: 492 numeric + 63 indicators + 270 one-hot = 825 features
+C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\linear_model\_logistic.py:458: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+2026-08-20 22:15:26 | INFO     | src.models.training | [logistic_regression] fold 0 | PR-AUC 0.2319 (8.5x baseline) | ROC-AUC 0.7998 | P 0.3690 | R 0.2996 | F1 0.3307 @ thr 0.9673 | 19.6s
+2026-08-20 22:15:26 | INFO     | src.features.aggregations | FrequencyEncoder fitted on 15 columns
+2026-08-20 22:15:27 | INFO     | src.features.aggregations | EntityAmountAggregator fitted on 3 entity keys (_entity_card:8,634 groups, _entity_card_addr:22,426 groups, _entity_card_full:22,714 groups)
+2026-08-20 22:15:27 | INFO     | src.data.preprocessing | Fitted categorical encoder on 38 columns (3674 total categories)
+2026-08-20 22:15:27 | INFO     | src.data.preprocessing | Fitted categorical encoder on 38 columns (3674 total categories)
+2026-08-20 22:15:27 | INFO     | src.features.pipeline | FeaturePipeline fitted: 530 features (38 categorical)
+2026-08-20 22:15:28 | INFO     | src.models.training | Subsampled dense-model training rows: 133979 -> 100000 (all 3388 positives kept)
+2026-08-20 22:15:31 | INFO     | src.data.preprocessing | Missingness indicators: 364 columns -> 66 distinct patterns
+2026-08-20 22:15:32 | INFO     | src.data.preprocessing | Fitted linear preprocessor: 492 numeric + 66 indicators + 382 one-hot = 940 features
+Traceback (most recent call last):
+  File "C:\Users\arigi\mlops\scripts\train.py", line 482, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "C:\Users\arigi\mlops\scripts\train.py", line 206, in main
+    result = train_cv(
+             ^^^^^^^^^
+  File "C:\Users\arigi\mlops\src\models\training.py", line 231, in train_cv
+    ) = _fit_one(
+        ^^^^^^^^^
+  File "C:\Users\arigi\mlops\src\models\training.py", line 154, in _fit_one
+    X_validation_matrix = linear_prep.transform(X_validation)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arigi\mlops\src\data\preprocessing.py", line 203, in transform
+    np.nan_to_num(scaled, copy=False, nan=0.0, posinf=0.0, neginf=0.0)
+  File "C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\type_check.py", line 516, in nan_to_num
+    idx_neginf = isneginf(d)
+                 ^^^^^^^^^^^
+  File "C:\Users\arigi\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\ufunclike.py", line 210, in isneginf
+    return nx.logical_and(is_inf, signbit, out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 36.9 MiB for an array with shape (78739, 492) and data type bool

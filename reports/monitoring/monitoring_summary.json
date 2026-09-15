@@ -1,0 +1,275 @@
+{
+  "traffic_source": "real unlabeled IEEE-CIS test period (starts 30 days after training ends)",
+  "disclaimer": "Not production traffic. This project has no live users; the comparison uses real dataset periods, not synthetic perturbations.",
+  "reference": "modelling_prepared",
+  "current": "test_prepared",
+  "n_features_compared": 507,
+  "feature_drift": {
+    "n_features": 507,
+    "significant": 181,
+    "moderate": 6,
+    "stable": 320,
+    "top": [
+      {
+        "feature": "id_23",
+        "psi": 13.682634,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.991,
+        "current_missing_rate": 0.989617,
+        "missing_rate_delta": -0.001383,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_27",
+        "psi": 13.68254,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.991,
+        "current_missing_rate": 0.989617,
+        "missing_rate_delta": -0.001383,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_31",
+        "psi": 13.207029,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.75355,
+        "current_missing_rate": 0.73205,
+        "missing_rate_delta": -0.0215,
+        "verdict": "significant"
+      },
+      {
+        "feature": "D9_anchored",
+        "psi": 12.446633,
+        "ks_statistic": 1.0,
+        "ks_p_value": 0.0,
+        "reference_missing_rate": 0.871317,
+        "current_missing_rate": 0.85565,
+        "missing_rate_delta": -0.015667,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_30",
+        "psi": 12.260991,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.859383,
+        "current_missing_rate": 0.859567,
+        "missing_rate_delta": 0.000183,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_34",
+        "psi": 12.10751,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.859283,
+        "current_missing_rate": 0.85645,
+        "missing_rate_delta": -0.002833,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_33",
+        "psi": 11.921635,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.868533,
+        "current_missing_rate": 0.859533,
+        "missing_rate_delta": -0.009,
+        "verdict": "significant"
+      },
+      {
+        "feature": "os_family",
+        "psi": 11.742772,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.859383,
+        "current_missing_rate": 0.859567,
+        "missing_rate_delta": 0.000183,
+        "verdict": "significant"
+      },
+      {
+        "feature": "DeviceInfo",
+        "psi": 11.045895,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.791233,
+        "current_missing_rate": 0.77515,
+        "missing_rate_delta": -0.016083,
+        "verdict": "significant"
+      },
+      {
+        "feature": "device_vendor",
+        "psi": 10.879225,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.791233,
+        "current_missing_rate": 0.77515,
+        "missing_rate_delta": -0.016083,
+        "verdict": "significant"
+      },
+      {
+        "feature": "browser_family",
+        "psi": 10.798844,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.75355,
+        "current_missing_rate": 0.73205,
+        "missing_rate_delta": -0.0215,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_16",
+        "psi": 10.481892,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.772917,
+        "current_missing_rate": 0.753667,
+        "missing_rate_delta": -0.01925,
+        "verdict": "significant"
+      },
+      {
+        "feature": "R_emaildomain",
+        "psi": 10.315725,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.761117,
+        "current_missing_rate": 0.735317,
+        "missing_rate_delta": -0.0258,
+        "verdict": "significant"
+      },
+      {
+        "feature": "r_email_suffix",
+        "psi": 10.315507,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.76135,
+        "current_missing_rate": 0.73555,
+        "missing_rate_delta": -0.0258,
+        "verdict": "significant"
+      },
+      {
+        "feature": "r_email_provider",
+        "psi": 10.315218,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.761117,
+        "current_missing_rate": 0.735317,
+        "missing_rate_delta": -0.0258,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_38",
+        "psi": 10.235449,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.752883,
+        "current_missing_rate": 0.731517,
+        "missing_rate_delta": -0.021367,
+        "verdict": "significant"
+      },
+      {
+        "feature": "DeviceType",
+        "psi": 10.19923,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.753233,
+        "current_missing_rate": 0.73155,
+        "missing_rate_delta": -0.021683,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_36",
+        "psi": 10.194009,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.752883,
+        "current_missing_rate": 0.731517,
+        "missing_rate_delta": -0.021367,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_35",
+        "psi": 10.191742,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.752883,
+        "current_missing_rate": 0.731517,
+        "missing_rate_delta": -0.021367,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_15",
+        "psi": 10.190825,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.752883,
+        "current_missing_rate": 0.731517,
+        "missing_rate_delta": -0.021367,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_37",
+        "psi": 10.190548,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.752883,
+        "current_missing_rate": 0.731517,
+        "missing_rate_delta": -0.021367,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_29",
+        "psi": 10.190422,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.752883,
+        "current_missing_rate": 0.7317,
+        "missing_rate_delta": -0.021183,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_28",
+        "psi": 10.190413,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.752883,
+        "current_missing_rate": 0.7317,
+        "missing_rate_delta": -0.021183,
+        "verdict": "significant"
+      },
+      {
+        "feature": "id_12",
+        "psi": 10.111359,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.747383,
+        "current_missing_rate": 0.722633,
+        "missing_rate_delta": -0.02475,
+        "verdict": "significant"
+      },
+      {
+        "feature": "M9",
+        "psi": 8.558465,
+        "ks_statistic": NaN,
+        "ks_p_value": NaN,
+        "reference_missing_rate": 0.631733,
+        "current_missing_rate": 0.46125,
+        "missing_rate_delta": -0.170483,
+        "verdict": "significant"
+      }
+    ]
+  },
+  "prediction_drift": {
+    "psi": 0.045471,
+    "verdict": "stable",
+    "reference_mean": 0.05883,
+    "current_mean": 0.042289,
+    "reference_p99": 0.896471,
+    "current_p99": 0.851852,
+    "n_reference": 60000,
+    "n_current": 60000
+  }
+}
